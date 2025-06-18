@@ -37,7 +37,7 @@ const Navbar = () => {
         Polygon Docs</button>
      </div>
 
-      <button>Toggle</button>
+      <button className='md:hidden'>Toggle</button>
 
     </div>
   )
