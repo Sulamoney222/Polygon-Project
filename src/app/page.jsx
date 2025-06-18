@@ -17,6 +17,38 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className=""></div>
+    <section className="">
+        <div className="">
+        
+        {/* text-div */}
+        <div className="">
+
+          <div className="">
+            <h2>Introducing: Aggregated Blockchains</h2>
+             <Image 
+             width={40}
+             height={40}
+             src='https://cdn.prod.website-files.com/637359c81e22b715cec245ad/6486fd415a318e62764b3a6c_arrow-right.svg'/>
+          </div>
+
+          <div className="">
+            <h1>Web3, Aggregated.</h1>
+            <p>Enabling an infinitely scalable web of sovereign blockchains that feels like a single chain. Powered by ZK tech.</p>
+          </div>
+          
+          <div className="">
+            <Image 
+            width={40}
+            height={40}
+            src='https://cdn.prod.website-files.com/637359c81e22b715cec245ad/662741410889f2489acd78d8_left.svg' />
+          <Image 
+          width={40}
+          height={40}
+          src='https://cdn.prod.website-files.com/637359c81e22b715cec245ad/6627414178f226ce86b98804_right.svg'/>
+          </div>
+        </div>
+
+        </div>
+    </section>
   );
 }
