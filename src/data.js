@@ -35,3 +35,37 @@ export const Links = [
         url:''
     },
 ]
+
+
+export const writes = [
+    {
+        id:1,
+        head:'Build',
+        body: 'Get access to documentation and start building'
+    },
+     {
+        id:2,
+        head:'Stack',
+        body: 'Participate in pecuring the network by delagating POL tokens'
+    },
+    {
+        id:3,
+        head:'Use Polygon',
+        body: 'Bridge Swap and Manage your assets on Polygon'
+    }
+]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
