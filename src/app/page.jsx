@@ -118,7 +118,11 @@ export default function Home() {
     </div>
   ))}
 </div>
-
+     
+     {/* accordion */}
+     <div className="">
+      
+     </div>
 
     </section>
   );
