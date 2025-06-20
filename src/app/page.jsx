@@ -3,6 +3,7 @@ import { writes } from "@/data";
 import Accordion from "@/components/sections/Accordion";
 import VideoCarousel from "@/components/video/VideoCarousel";
 import Ecosystem from "@/components/sections/Ecosystem";
+import IRL from "@/components/sections/IRL";
 //https://cdn.prod.website-files.com/637359c81e22b715cec245ad/6627414178f226ce86b98804_right.svg
 //https://cdn.prod.website-files.com/637359c81e22b715cec245ad/662741410889f2489acd78d8_left.svg
 //https://polytech-assets.polygon.technology/videos/homepage/newsletter.mp4
@@ -128,6 +129,10 @@ export default function Home() {
 
      <div className="">
       <Ecosystem/>
+     </div>
+
+     <div className="">
+      <IRL/>
      </div>
 
     </section>
