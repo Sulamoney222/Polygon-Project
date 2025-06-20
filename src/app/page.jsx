@@ -1,9 +1,16 @@
+'use client'
 import Image from "next/image";
 import { writes } from "@/data";
 import Accordion from "@/components/sections/Accordion";
 import VideoCarousel from "@/components/video/VideoCarousel";
 import Ecosystem from "@/components/sections/Ecosystem";
 import IRL from "@/components/sections/IRL";
+import Aos from "aos";
+import 'aos/dist/aos.css'
+import { useEffect } from "react";
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
+ 
 //https://cdn.prod.website-files.com/637359c81e22b715cec245ad/6627414178f226ce86b98804_right.svg
 //https://cdn.prod.website-files.com/637359c81e22b715cec245ad/662741410889f2489acd78d8_left.svg
 //https://polytech-assets.polygon.technology/videos/homepage/newsletter.mp4
@@ -31,6 +38,21 @@ const videoSources = [
 ];
 
 export default function Home() {
+
+  
+  useEffect(()=>{
+    Aos.init({
+      once: true,
+      duration: 1000
+    })
+  }, [])
+
+  useGSAP(()=>{
+     gsap.to('.first', {translateX:0, opacity:1, duration:2})
+     gsap.to('.second', {translateY:0, opacity:1, duration:2})
+  },[])
+
+
   return (
     <section className="relative max-w-7xl mx-auto flex flex-col items-center max-md:p-8">
 
@@ -47,7 +69,7 @@ export default function Home() {
       <div className="relative z-10 mt-10 w-full flex flex-col items-center text-center">
 
         {/* Info Banner */}
-        <div className="flex items-center border border-zinc-500 p-2 rounded-xl space-x-2 bg-opacity-90 backdrop-blur-md">
+        <div className="first -translate-x-100 opacity-0 flex items-center border border-zinc-500 p-2 rounded-xl space-x-2 bg-opacity-90 backdrop-blur-md">
           <h2 className="text-sm sm:text-base font-normal">
             Introducing: Aggregated Blockchains
           </h2>
@@ -61,7 +83,7 @@ export default function Home() {
         </div>
 
         {/* Main Heading */}
-        <div className="mt-8 max-w-2xl">
+        <div className="second mt-8 -translate-y-100 opacity-0 max-w-2xl">
           <h1 className="text-5xl font-bold leading-tight">
             Web3,<br />Aggregated.
           </h1>
@@ -93,10 +115,12 @@ export default function Home() {
 
       {/* 🎞️ Video Carousel */}
       
-      <VideoCarousel/>
+   {/* <VideoCarousel/> */}
 
       {/* optional arrays */}
-      <div className="mt-8 w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div 
+      data-aos= 'zoom-out'
+      className="mt-8 w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
   {writes.map(({ id, head, body }) => (
     <div
       key={id}

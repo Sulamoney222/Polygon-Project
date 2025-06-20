@@ -4,21 +4,24 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 const first = [
-  { id: 1, head: '$28k', body: 'Total Contract Creators' },
+  { id: 1, head: '$45.14k', body: 'Total Contract Creators' },
   { id: 2, head: '$2.44B+', body: 'Transactions' },
-  { id: 3, head: '¬$50.01', body: 'Avg. Cost per txn' },
+  { id: 3, head: 12.98, body: 'Avg. Cost per txn' },
 ];
 
 const second = [
   { id: 1, head: '$219.11M', body: 'Unique Addresses' },
   { id: 2, head: '$12.80B+', body: 'NFT Sales Volume' },
-  { id: 3, head: '$2.44B+', body: 'Deployed Smart Contracts' },
+  { id: 3, head: 78.56, body: 'Deployed Smart Contracts' },
 ];
 
 const Ecosystem = () => {
   useEffect(() => {
     AOS.init({ duration: 1000, once: true });
+    
   }, []);
+  
+ 
 
   return (
     <div className="w-full px-4 md:px-20 mt-20 md:mt-32">
@@ -35,7 +38,7 @@ const Ecosystem = () => {
               key={id}
               className="bg-black border border-zinc-800 shadow-xl shadow-zinc-900 rounded-2xl p-6 w-full md:w-72"
             >
-              <h1 className="text-3xl font-bold text-white">{head}</h1>
+              <h1 className={ head > 0 ?`text-red-600 text-3xl font-bold` : `text-3xl font-bold text-white`}>{head}</h1>
               <p className="text-stone-400 text-base mt-2">{body}</p>
             </div>
           ))}
@@ -47,7 +50,7 @@ const Ecosystem = () => {
               key={id}
               className="bg-stone-900 border border-zinc-700 shadow-xl shadow-zinc-900 rounded-2xl p-6 w-full md:w-72"
             >
-              <h1 className="text-3xl font-bold text-white">{head}</h1>
+              <h1 className={head > 0 ? `text-3xl font-bold text-green-800` : `text-3xl font-bold text-white`}>{head}</h1>
               <p className="text-stone-400 text-base mt-2">{body}</p>
             </div>
           ))}
