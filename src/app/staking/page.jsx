@@ -1,5 +1,13 @@
 import React from 'react'
 
+const rewards = [
+  {
+     head: 'Earn Rewards',
+     body: ''
+  }
+
+]
+
 const Stake = () => {
   return (
    <section className="">
@@ -13,6 +21,11 @@ const Stake = () => {
         <button className="">Becoma A Delegator</button>
       </div>
     </h2>
+   </div>
+
+   <div className="">
+    <h2>Why stake on Polygon?</h2>
+
    </div>
 
    </section>
