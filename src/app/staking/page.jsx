@@ -20,6 +20,21 @@ const rewards = [
 
 ]
 
+const stake = [
+  {
+    id:1,
+    head:'Becoma A Delegator',
+    vid: 'https://polytech-assets.polygon.technology/videos/staking/Validator.mp4',
+    body: 'Validators verify transactions and add new blocks on the blockchain. In return, they earn rewards. Validator nodes are units on the Polygon blockchain that participate in consensus group work and commit checkpoints on the Ethereum Mainnet.',
+  },
+  {
+    id:2,
+    head: 'Become A Delegator',
+    vid:'https://polytech-assets.polygon.technology/videos/staking/delegator.mp4',
+    body: 'Participate as a delegator to earn rewards and contribute to network secuity. Delegate staking tokens to a validator of your choice and share risks and rewards'
+  }
+]
+
 const Stake = () => {
   return (
    <section className=" mx-auto items-center max-w-7xl">
