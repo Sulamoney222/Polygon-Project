@@ -41,7 +41,7 @@ const IRL = () => {
         <h1 className="text-3xl md:text-5xl font-semibold">Time to roll up your sleeves</h1>
       </div>
 
-      <div className="flex  max-sm:max-w-80 max-sm:overflow-y-auto gap-4 sm:grid sm:grid-cols-2 lg:grid-cols-4 sm:gap-8">
+      <div className="flex  max-sm:max-w-80 max-sm:overflow-x-scroll snap-x snap-mandatory scroll-bar-hide  gap-4 sm:grid sm:grid-cols-2 lg:grid-cols-4 sm:gap-8">
         {sleeves.map(({ id, img, head, body, url }) => (
           <div
             key={id}
