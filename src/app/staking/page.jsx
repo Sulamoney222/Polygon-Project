@@ -5,7 +5,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-gsap.registerPlugin(ScrollTrigger);
+// gsap.registerPlugin(ScrollTrigger);
 
 const rewards = [
   {
@@ -58,33 +58,30 @@ const Stake = () => {
   const [activeFAQ, setActiveFAQ] = useState(null);
 
   useEffect(() => {
-    AOS.init({ duration: 1, once: true });
+  AOS.init({
+    duration: 800,
+    easing: 'ease-in-out',
+    once: true,
+  });
+}, []);
 
-    // GSAP reveal on scroll
-    gsap.utils.toArray('.reveal').forEach(el => {
-      gsap.from(el, {
-        opacity: 0,
-        y: 30,
-        duration: 0.8,
-        scrollTrigger: {
-          trigger: el,
-          start: 'top 80%',
-        }
-      });
-    });
-  }, []);
-
+  
   return (
     <section ref={sectionRef} className="mx-auto max-w-7xl px-4 py-12 space-y-16">
       {/* Hero Section */}
-      <div className="flex flex-col-reverse lg:flex-row items-center gap-8 reveal">
-        <div className="lg:w-1/2 space-y-4">
+      <div 
+      data-aos="fade-up"
+      className="flex flex-col-reverse lg:flex-row items-center gap-8 reveal">
+        <div data-aos="fade-right"
+        className="lg:w-1/2 space-y-4">
           <h2 className="text-3xl font-bold">Earn rewards while securing the Polygon PoS network</h2>
           <p>Anyone can use POL tokens to help safeguard the network and earn rewards.</p>
           <button className="px-6 py-3 bg-blue-600 text-white rounded">Become A Delegator</button>
         </div>
-        <div className="lg:w-1/2">
-          <video autoplay muted loop playsInline className="w-full rounded shadow-lg">
+        <div 
+        data-aos="fade-left"
+        className="lg:w-1/2">
+          <video autoPlay muted loop playsInline className="w-full rounded shadow-lg">
             <source src={stakeOptions[1].vid} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
@@ -96,7 +93,9 @@ const Stake = () => {
         <h2 className="text-2xl font-semibold mb-4 reveal" data-aos="fade-up">Why stake on Polygon?</h2>
         <div className="flex space-x-4 overflow-x-auto pb-4">
           {rewards.map((r,i) => (
-            <div key={i} className="min-w-[250px] flex-shrink-0 p-4 bg-white rounded shadow reveal" data-aos="fade-up">
+            <div key={i} 
+            data-aos="zoom-in"
+            className="min-w-[250px] flex-shrink-0 p-4 bg-white rounded shadow reveal" data-aos="fade-up">
               <img src={r.img} alt={r.head} className="h-40 w-full object-cover rounded" />
               <h3 className="mt-4 font-semibold">{r.head}</h3>
               <p className="mt-2 text-sm">{r.body}</p>
@@ -117,7 +116,7 @@ const Stake = () => {
       <div className="reveal space-y-6" data-aos="fade-up">
         <h2 className="text-2xl font-semibold">How to stake?</h2>
         <p>Polygon PoS chain runs on Proof of Stake. Anyone can become a validator or delegator using POL tokens.</p>
-        <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6 overflow-x-auto pb-4">
+        <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6 overflow-x-auto scroll-bar-hide pb-4">
           {stakeOptions.map(opt => (
             <div key={opt.id} className="min-w-[300px] flex-shrink-0 bg-stone-800 rounded shadow p-4" data-aos="fade-up">
               <h3 className="font-semibold">{opt.head}</h3>
