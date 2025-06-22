@@ -50,11 +50,13 @@ const Page = () => {
   const handleSubmit = () => {
     if (email.trim()) {
       setSubmit(true);
+      setEmail('')
+      setTimeout(()=>setSubmit(false),3000)
     }
   };
 
   return (
-    <section className="bg-black text-white px-4 py-12 space-y-16">
+    <section className="bg-black max-md:px-6 text-white px-4 py-12 space-y-16">
       {/* Hero Section */}
       <div className="max-w-6xl mx-auto text-center space-y-6" data-aos="fade-up">
         <div className="w-full aspect-video rounded overflow-hidden shadow-lg">
