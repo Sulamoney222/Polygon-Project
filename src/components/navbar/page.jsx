@@ -11,6 +11,7 @@ const Navbar = () => {
 
       <div className="">
       <Image 
+      alt='good'
       className='w-max '
       width={40}
       height={40}
