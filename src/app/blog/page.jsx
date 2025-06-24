@@ -100,7 +100,7 @@ const Blog = () => {
       <div data-aos="fade-up" className="grid md:grid-cols-2 gap-8 border border-gray-700 rounded-lg p-6 bg-stone-900">
         {items.map(({ id, head, img, body }) => (
           <div key={id} data-aos="fade-up" className="space-y-4">
-            <Image src={img} alt={head} width={600} height={300} className="rounded" />
+            <Image src={img} alt={head} width={100} height={100} className="rounded" />
             <h2 className="text-xl font-semibold">{head}</h2>
             <p className="text-gray-400">{body}</p>
           </div>
