@@ -87,6 +87,7 @@ const Stake = () => {
           </video>
         </div>
       </div>
+      
 
       {/* Rewards */}
       <div>

@@ -115,7 +115,7 @@ export default function Home() {
 
       {/* 🎞️ Video Carousel */}
       
-   {/* <VideoCarousel/> */}
+   <VideoCarousel/>
 
       {/* optional arrays */}
       <div 
