@@ -12,7 +12,7 @@ const Grant = () => {
         
        </video>
       <h1>Bring Etherum to <strong>everyone</strong></h1>
-      
+      <div className="">hhh</div>
        
       </div>
     </section>
