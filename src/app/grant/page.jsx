@@ -4,9 +4,15 @@ const Grant = () => {
   return (
     <section className="">
       <div className="">
-       <video src="">
-        so
+       <video 
+       muted
+       autoPlay
+       playsInline
+       src="">
+        
        </video>
+      <h1>Bring Etherum to <strong>everyone</strong></h1>
+       
       </div>
     </section>
     
