@@ -14,7 +14,9 @@ const Grant = () => {
       <h1>Bring Etherum to <strong>everyone</strong></h1>
       <p> Polygon zkEVM Beta is the leading ZK scaling solution that is equivalent to Etherum Virtual 
         Machine: The vast majority of existing smart contracts, developer tools and wallets work seamlessly </p>
-       
+      <button className='bg-white text-black'>
+        Get In Touch
+      </button>
       </div>
     </section>
     
