@@ -12,7 +12,8 @@ const Grant = () => {
         
        </video>
       <h1>Bring Etherum to <strong>everyone</strong></h1>
-      <p> Polygon zkEVM Beta is the leading ZK scaling solution that is equivalent to Etherum Virtual Machine: The vast majority</p>
+      <p> Polygon zkEVM Beta is the leading ZK scaling solution that is equivalent to Etherum Virtual 
+        Machine: The vast majority </p>
        
       </div>
     </section>
