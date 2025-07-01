@@ -79,9 +79,13 @@ NUMBER: number of processable transactions`,
   },
   {
     id:6,
-    que: 'For anyone not familiar, what is Polygon zkEVM?',
-    ans: `Polygon zkEVM is the leading zero knowledge scaling solution that’s equivalent with the Ethereum Virtual Machine, this means that most of the existing smart contracts, developer tools, and wallets work seamlessly.
-     Polygon zkEVM harnesses the power of ZK proofs to reduce transaction cost and increase throughput, all while inheriting the security of Ethereum L1.`
+    que: `Which opcodes are missing in the current zkEVM version?`,
+    ans: `zkEVM supports all opcodes but SHA256, BLAKE and PAIRINGS.`
+  },
+   {
+    id:7,
+    que: `Can this layer 2 zkEVM work with other chains?`,
+    ans: `At the moment, the answer is No. Aspirationally, the goal in the future is to build one of many chains that allow for users' assets to move from layer 2 (L2) to layer 2. With that being said, users will not be able to utilize this functionality at launch, but L2 to L2 movement is something road mapped for the future.`
   },
 ]
 
