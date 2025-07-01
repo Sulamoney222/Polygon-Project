@@ -17,7 +17,7 @@ const performance= [
       m1: 'Polygon zKEVM harnesses the power of ZK proofs to reduce transaction cost',
       m2: 'Polygon zKEVM harnesses the power of ZK proofs to reduce transaction cost',
     }
-  }hhhhhddd
+  }hhhhhdddtttt
 ]
 
 const Grant = () => {
