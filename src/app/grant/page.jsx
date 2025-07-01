@@ -133,6 +133,20 @@ const Grant = () => {
         <Image
         src= 'https://cdn.prod.website-files.com/637359c81e22b715cec245ad/63b5edddfd604202a584ca9e_ZKEVM.svg' />
       </div>
+       <div className="">
+        <h2>Polygon zkEVM FAQ</h2>
+        <div className="">
+          {
+            Accordion.map((q)=>{
+              const {que, ans} = q
+              return(
+                <>
+                </>
+              )
+            })
+          }
+        </div>
+       </div>
     </section>
     
   )
