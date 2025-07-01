@@ -9,6 +9,14 @@ const performance= [
       m1: 'Polygon zKEVM harnesses the power of ZK proofs to reduce transaction cost',
       m2: 'Polygon zKEVM harnesses the power of ZK proofs to reduce transaction cost',
     }
+  },
+  {
+    id:1,
+    head: 'Low cost',
+    bpdy:{
+      m1: 'Polygon zKEVM harnesses the power of ZK proofs to reduce transaction cost',
+      m2: 'Polygon zKEVM harnesses the power of ZK proofs to reduce transaction cost',
+    }
   }
 ]
 
