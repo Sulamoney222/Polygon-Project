@@ -4,7 +4,7 @@ import React from 'react'
 const performance= [
   {
     id:1,
-    head: 'Low cost',
+    head: 'Low cost',n
     bpdy:{
       m1: 'Polygon zKEVM harnesses the power of ZK proofs to reduce transaction cost',
       m2: 'Polygon zKEVM harnesses the power of ZK proofs to reduce transaction cost',
