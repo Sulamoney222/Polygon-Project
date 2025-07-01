@@ -64,6 +64,17 @@ const Grant = () => {
       <div className="">
         <h1>Etherum bb scalability with zkEVM performance and security</h1>
         
+        <div className="">
+          {
+            performance.map((p)=>{
+                  const {id,head,bqdy} = p
+                  return (
+                    <>
+                    </>
+                  )
+            })
+          }
+        </div>
       </div>
     </section>
     
