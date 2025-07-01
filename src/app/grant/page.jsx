@@ -1,3 +1,4 @@
+'use client'
 import Link from 'next/link'
 import React from 'react'
 
@@ -90,6 +91,20 @@ NUMBER: number of processable transactions`,
 ]
 
 const Grant = () => {
+
+   const [email, setEmail] = useState('');
+    const [submit, setSubmit] = useState(false);
+  
+   
+  
+    const handleSubmit = () => {
+      if (email.trim()) {
+        setSubmit(true);
+        setEmail('')
+        setTimeout(()=>setSubmit(false),3000)
+      }
+    };
+  
   return (
     <section className="">
       <div className="">
@@ -146,8 +161,34 @@ const Grant = () => {
             })
           }
         </div>
-        <Link><button>Read More</button></Link>
+        <Link href='/staking'><button className='bg-white text-black'>Read More</button></Link>
        </div>
+     
+
+      {/* Subscribe Section */}
+      <div data-aos="fade-up" className="max-w-xl mx-auto text-center border border-white rounded-lg p-6">
+        {!submit ? (
+          <>
+            <h2 className="text-2xl font-semibold mb-4">Get updates straight to your email</h2>
+            <input
+              type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              placeholder="Enter your email"
+              className="w-full p-3 mb-4 bg-transparent border border-white rounded placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 text-white"
+            />
+            <button
+              onClick={handleSubmit}
+              className="bg-blue-600 text-white py-2 px-6 rounded hover:bg-blue-700 transition"
+            >
+              Subscribe
+            </button>
+          </>
+        ) : (
+          <div className="text-green-500 text-lg font-medium">🎉 Thank you! You’re on the list.</div>
+        )}
+      </div>
+
     </section>
     
   )
