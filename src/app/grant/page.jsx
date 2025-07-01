@@ -33,7 +33,7 @@ const Grant = () => {
 
       <div className="">
         <h1>Etherum bb scalability with zkEVM performance and security</h1>
-      I still don
+      I still dont understand what 
       </div>
     </section>
     
