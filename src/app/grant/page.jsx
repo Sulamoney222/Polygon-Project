@@ -56,7 +56,33 @@ const Accordion = [
 2- Inherits Ethereum security
 3- Lower cost compared to L1 and better finality than other L2 solutions like Optimistic Rollups
 4- ZKP-powered scalability, and aiming at similar throughput to PoS`
-  }
+  },
+  {
+    id:3,
+    que: `wHAT IS SO UNIQUE ABOUT ZKevmS?`,
+    ans: `Many people in crypto believed that a zkEVM was years away, and might never be practical or competitive with other ZK L2s. This was framed as an unavoidable tradeoff: we could have either full EVM equivalence or high performance, but not both. However, with the proving system breakthroughs pioneered by Polygon Labs, we belieive we can achieve full EVM equivalence while offering better performance (higher throughput, lower latency, and lower cost) than alt-L1s, optimistic rollups and other ZK rollups.`
+  },
+  {
+    id:4,
+    que: `Why is EVM Equivalence needed?`,
+    ans: `EVM-equivalent: Ethereum isn’t just a blockchain. It’s a rich ecosystem of smart contracts, developer tools, infrastructure, and wallets. It’s a vibrant community of developers, auditors, and users. The best way to scale Ethereum is to strive to maintain equivalence with this ecosystem, and the Polygon zkEVM will give users and developers an almost identical experience to Ethereum L1 -- just with a significant scalability improvement.`
+  },
+  {
+    id:5,
+    que: `What EVM opcodes are different on Polygon zKEVM?`,
+    ans: `SELFDESTRUCT: removed by SENDALL
+EXTCODEHASH: returns hash contract bytecode from Polygon zkEVM state tree (do not check if the account is empty)
+DIFFICULTY: returns 0
+BLOCKCHASH: returns all previous block hashes (not just the last 256 blocks)
+BLOCKCHASH is the state root at the end of a processable transaction and it is stored on the system smart contract
+NUMBER: number of processable transactions`,
+  },
+  {
+    id:6,
+    que: 'For anyone not familiar, what is Polygon zkEVM?',
+    ans: `Polygon zkEVM is the leading zero knowledge scaling solution that’s equivalent with the Ethereum Virtual Machine, this means that most of the existing smart contracts, developer tools, and wallets work seamlessly.
+     Polygon zkEVM harnesses the power of ZK proofs to reduce transaction cost and increase throughput, all while inheriting the security of Ethereum L1.`
+  },
 ]
 
 const Grant = () => {
