@@ -32,8 +32,8 @@ const Grant = () => {
       </div>
 
       <div className="">
-        <h1>Etherum bb scalabilit  y with zkEVM performance and security</h1>
-      
+        <h1>Etherum bb scalability with zkEVM performance and security</h1>
+      I still don
       </div>
     </section>
     
