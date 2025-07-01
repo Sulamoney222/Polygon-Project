@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 
@@ -28,7 +29,7 @@ const Grant = () => {
       <p> Polygon zkEVM Beta is the leading ZK scaling solution that is equivalent to Etherum Virtual 
         Machine: The vast majority of existing smart contracts, developer tools and wallets work seamlessly </p>
       <button className='bg-white text-black'>
-        Get In Touch
+        <Link href='/' >Get In Touch</Link>
       </button>
       </div>
 
