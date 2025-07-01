@@ -42,6 +42,23 @@ const performance= [
  
 ]
 
+const Accordion = [
+  {
+    id:1,
+    que: 'For anyone not familiar, what is Polygon zkEVM?',
+    ans: `Polygon zkEVM is the leading zero knowledge scaling solution that’s equivalent with the Ethereum Virtual Machine, this means that most of the existing smart contracts, developer tools, and wallets work seamlessly.
+     Polygon zkEVM harnesses the power of ZK proofs to reduce transaction cost and increase throughput, all while inheriting the security of Ethereum L1.`
+  },
+  {
+    id:2,
+    que: `What are the main features of Polygon zKEVM?`,
+    ans: `1- Ethereum-equivalence: Most Ethereum smart contracts, wallets, tools, etc. work on Polygon zkEVM seamlessly.
+2- Inherits Ethereum security
+3- Lower cost compared to L1 and better finality than other L2 solutions like Optimistic Rollups
+4- ZKP-powered scalability, and aiming at similar throughput to PoS`
+  }
+]
+
 const Grant = () => {
   return (
     <section className="">
@@ -75,6 +92,16 @@ const Grant = () => {
             })
           }
         </div>
+      </div>
+
+
+      <div className="">
+        <h1>EVM equivalence and secure scalability</h1>
+        <p>
+          Polygon zkEVM Beta harnesses the power of ZK proofs to reduce transaction cost and massively increase throughput, all while inheriting the security of Ethereum L1.
+        </p>
+        <Image
+        src= 'https://cdn.prod.website-files.com/637359c81e22b715cec245ad/63b5edddfd604202a584ca9e_ZKEVM.svg' />
       </div>
     </section>
     
