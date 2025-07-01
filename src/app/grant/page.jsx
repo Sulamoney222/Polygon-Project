@@ -10,14 +10,7 @@ const performance= [
       m2: 'Polygon zKEVM harnesses the power of ZK proofs to reduce transaction cost',
     }
   },
-  {
-    id:2,hhhjjjhhhhhtttttttttt
-    head: 'Low cost',
-    bpdy:{
-      m1: 'Polygon zKEVM harnesses the power of ZK proofs to reduce transaction cost',
-      m2: 'Polygon zKEVM harnesses the power of ZK proofs to reduce transaction cost',
-    }
-  }jjjj
+ 
 ]
 
 const Grant = () => {
@@ -41,7 +34,7 @@ const Grant = () => {
 
       <div className="">
         <h1>Etherum bb scalability with zkEVM performance and security</h1>
-      I still dont understand wha jjjjj
+
       </div>
     </section>
     
