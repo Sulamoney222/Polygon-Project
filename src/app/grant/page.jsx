@@ -32,7 +32,7 @@ const Grant = () => {
       </div>
 
       <div className="">
-        <h1>Etherum scalability with zkEVM performance and security</h1>
+        <h1>Etherum bb scalability with zkEVM performance and security</h1>
       
       </div>
     </section>
