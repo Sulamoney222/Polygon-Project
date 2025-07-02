@@ -81,6 +81,7 @@ const IRL = () => {
 <div className="flex justify-center">
       <Image
       className='w-max '
+      alt='prod'
       width={40}
       height={40}
       src='https://cdn.prod.website-files.com/637359c81e22b715cec245ad/66273f100889f2489acb2d8e_Polygon%20Logo%20Complete%20White.svg'/>
