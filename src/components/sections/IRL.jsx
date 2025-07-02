@@ -1,4 +1,5 @@
-
+'use client'
+import {useState} from 'react'
 import Image from 'next/image';
 import React from 'react';
 
@@ -34,6 +35,16 @@ const sleeves = [
 ];
 
 const IRL = () => {
+  const [email, setEmail] = useState('')
+    const [submit, setSubmit] = useState(false)
+    
+    const handleSubmit = ()=>{
+     if(email.trim() !== ''){
+       setEmail('')
+      setSubmit(true)
+      setTimeout(()=>setSubmit(false),3000)
+     }
+    }
   
   return (
     <div className="w-full px-4 md:px-12 overflow-hidden lg:px-20 py-16 text-white">
@@ -65,20 +76,31 @@ const IRL = () => {
       </div>
 
 
-    <div className="w-full max-w-md mx-auto px-4 py-8">
-  <h2 className="text-2xl font-semibold text-center mb-4">Get our newsletter</h2>
-  <div className="flex flex-col sm:flex-row items-center gap-4">
-    <input
-      className="flex-1 w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
-      type="email"
-      placeholder="Enter your email"
-    />
-    <button className="px-6 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition">
-      Subscribe
-    </button>
-  </div>
-</div>
-<div className="flex justify-center">
+     <div data-aos="fade-up" className="max-w-xl mx-auto text-center  mt-20 rounded-lg p-6">
+        {!submit ? (
+          <>
+            <h2 className="text-2xl font-semibold mb-4">Get our newsletter</h2>
+            <input
+              type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              placeholder="Enter your email"
+              className="w-full p-3 mb-4 bg-transparent border border-white rounded placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 text-white"
+            />
+            <button
+              onClick={handleSubmit}
+              className="bg-blue-600 text-white py-2 px-6 rounded hover:bg-blue-700 transition"
+            >
+              Subscribe
+            </button>
+          </>
+        ) : (
+          <div className="text-green-500 text-lg font-medium">🎉 Thank you! You’re on the list.</div>
+        )}
+      </div>
+
+
+<div className="flex mt-10 justify-center">
       <Image
       className='w-max '
       alt='prod'
