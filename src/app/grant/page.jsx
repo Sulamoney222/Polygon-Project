@@ -119,8 +119,8 @@ const toggleAccordion = (index) => {
           <p className="text-lg">
             Polygon zkEVM Beta is the leading ZK scaling solution that is equivalent to Ethereum Virtual Machine...
           </p>
-          <Link href="/">
-            <button className="inline-block bg-white text-black px-6 py-3 rounded-lg font-medium hover:bg-gray-200 transition">
+          <Link href="#for">
+            <button className="inline-block cursor-pointer bg-white text-black px-6 py-3 rounded-lg font-medium hover:bg-gray-200 transition">
               Get In Touch
             </button>
           </Link>
@@ -205,7 +205,7 @@ const toggleAccordion = (index) => {
   </div>
 
   <Link href="/staking">
-    <button className="mt-6 inline-block bg-white text-black px-6 py-3 rounded-lg font-medium hover:bg-gray-200 transition">
+    <button className="mt-6 inline-block bg-white cursor-pointer text-black px-6 py-3 rounded-lg font-medium hover:bg-gray-200 transition">
       Read More
     </button>
   </Link>
@@ -214,7 +214,7 @@ const toggleAccordion = (index) => {
 
 
       {/* Subscribe */}
-      <div data-aos="fade-up" className="max-w-xl mx-auto text-center border border-white rounded-lg p-8 space-y-4">
+      <div data-aos="fade-up" id='for' className="max-w-xl mx-auto text-center border border-white rounded-lg p-8 space-y-4">
         {!submit ? (
           <>
             <h2 className="text-2xl font-semibold">Get updates straight to your email</h2>

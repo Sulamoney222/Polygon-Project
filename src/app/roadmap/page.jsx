@@ -12,6 +12,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import gsap from 'gsap';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Link from 'next/link';
 
 const images = [
   "https://cdn.prod.website-files.com/637359c81e22b715cec245ad/64da1d62343169203747b879_Sandeep_hyperproductive.avif",
@@ -55,7 +56,7 @@ const Roadmap = () => {
         <p className="text-lg text-gray-700 mb-6">
           A web3 future that brings together the best of monolithic and modular designs. Offering users and developers a seamless, unified environment across many chains that can scale to the size of the internet.
         </p>
-        <button className="bg-indigo-600 text-white py-2 px-6 rounded hover:bg-indigo-700 transition duration-300">Learn More</button>
+        <Link href='/'><button className="bg-indigo-600 cursor-pointer text-white py-2 px-6 rounded hover:bg-indigo-700 transition duration-300">Learn More</button></Link>
       </div>
 
       {/* Roadmap Section */}

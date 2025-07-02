@@ -13,7 +13,7 @@ const POL= [
         body: `POL is the lifeblood of Polygon PoS. When you conduct any transaction or use an application built on Polygon PoS, you'll pay a bit of gas in POL. This incentivizes validators to process and verify transactions, ensuring the network remains functional and secure.`
     },
     {   
-        id:1,
+        id:2,
         vid: 'https://polytech-assets.polygon.technology/videos/matic/03_network_and_security.mp4%20(720p).mp4',
         head:'Network Security',
         body: `Polygon employs a proof-of-stake mechanism that uses staked POL to reach consensus across the network. By staking POL, you can secure Polygon PoS and earn rewards. Validators are disincentivized from engaging in malicious behavior, maintaining the network's integrity.`

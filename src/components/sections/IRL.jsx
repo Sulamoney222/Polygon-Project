@@ -8,28 +8,28 @@ const sleeves = [
     img: 'https://cdn.prod.website-files.com/637359c81e22b715cec245ad/662813e376dafcc7ad456041_Sustainablity.png',
     head: 'Connect IRL',
     body: 'Meet up with our community at hackathons, conferences, and events worldwide',
-    url: '',
+    url: '/roadmap',
   },
   {
     id: 2,
     img: 'https://cdn.prod.website-files.com/637359c81e22b715cec245ad/6628148a5d4623616683b6fe_Build.png',
     head: 'Explore POL',
     body: 'POL is the currency of Polygon that enables users to interact with tens of thousands of dApps in our ecosystem.',
-    url: '',
+    url: '/staking',
   },
   {
     id: 3,
     img: 'https://cdn.prod.website-files.com/637359c81e22b715cec245ad/6628148e74d09ee6472ee9a0_Connect.webp',
     head: 'Govern',
     body: 'Participate in shaping Polygon protocols',
-    url: '',
+    url: '/matic',
   },
   {
     id: 4,
     img: 'https://cdn.prod.website-files.com/637359c81e22b715cec245ad/662813e465f95ba4ceb1852f_Explore-1.png',
     head: 'Govern',
     body: 'Get to know our modular, flexible framework that provides solutions and supports building a variety of applications',
-    url: '',
+    url: '/grant',
   },
 ];
 
