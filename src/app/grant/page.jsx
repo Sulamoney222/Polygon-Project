@@ -164,7 +164,7 @@ const toggleAccordion = (index) => {
       </div>
 
       {/* FAQ Accordion */}
-     <div data-aos="fade-up">
+<div data-aos="fade-up">
   <h2 className="text-3xl font-semibold mb-6">Polygon zkEVM FAQ</h2>
   <div className="space-y-4">
     {Accordion.map(({ id, que, ans }, index) => {
@@ -176,10 +176,22 @@ const toggleAccordion = (index) => {
         >
           <button
             onClick={() => toggleAccordion(index)}
-            className="w-full text-left font-medium text-white focus:outline-none hover:text-blue-400"
+            className="w-full flex justify-between items-center text-left font-medium text-white focus:outline-none hover:text-blue-400"
           >
-            {que}
+            <span>{que}</span>
+            <svg
+              className={`w-5 h-5 transform transition-transform duration-300 ${
+                isOpen ? 'rotate-180' : 'rotate-0'
+              }`}
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              viewBox="0 0 24 24"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
           </button>
+
           <div
             className={`overflow-hidden transition-all duration-300 ease-in-out ${
               isOpen ? 'max-h-screen opacity-100 mt-2' : 'max-h-0 opacity-0'
@@ -192,12 +204,13 @@ const toggleAccordion = (index) => {
     })}
   </div>
 
-  <Link href="/staking" legacyBehavior>
-    <a className="mt-6 inline-block bg-white text-black px-6 py-3 rounded-lg font-medium hover:bg-gray-200 transition">
+  <Link href="/staking">
+    <button className="mt-6 inline-block bg-white text-black px-6 py-3 rounded-lg font-medium hover:bg-gray-200 transition">
       Read More
-    </a>
+    </button>
   </Link>
 </div>
+
 
 
       {/* Subscribe */}
