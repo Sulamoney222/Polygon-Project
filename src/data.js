@@ -1,38 +1,33 @@
 export const Links = [
     {
         id:1,
-        name:'solution',
-        url:''
+        name:'Blog',
+        url:'/blog'
     },
      {
         id:2,
-        name:'developers',
-        url:''
+        name:'Matic',
+        url:'/matic'
     },
      {
         id:3,
-        name:'community',
-        url:''
+        name:'Roadmap',
+        url:'/roadmap'
     },
      {
         id:4,
-        name:'ZK Resources',
-        url:''
+        name:'Staking',
+        url:'/staking'
     },
      {
         id:5,
-        name:'blog',
-        url:''
+        name:'Grant',
+        url:'/grant'
     },
      {
         id:6,
-        name:'company',
-        url:''
-    },
-     {
-        id:7,
-        name:'use polygon',
-        url:''
+        name:'Miden',
+        url:'https://miden.xyz/'
     },
 ]
 
